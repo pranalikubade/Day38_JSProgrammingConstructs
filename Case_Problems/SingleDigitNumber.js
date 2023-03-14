@@ -1,15 +1,7 @@
-
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question("Enter a single-digit number: ",number => {
-
+const prompt=require("prompt-sync")();
+const num = prompt("Enter a single-digit number: "); 
   // Converting the number to an integer
- number = parseInt(number);
+ number = parseInt(num);
 
   // Using a switch-case statement to convert the number to word
   switch(number) {
@@ -47,5 +39,5 @@ rl.question("Enter a single-digit number: ",number => {
       console.log("Invalid input!");
   }
 
-  rl.close();
-});
+//   rl.close();
+// });

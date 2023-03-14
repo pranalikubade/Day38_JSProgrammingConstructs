@@ -1,9 +1,6 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
+const prompt=require("prompt-sync")();
+const number = prompt("Enter a single-digit number: "); 
   
-  readline.question('Enter a  number between 0 to 6: ', number => {
     if (number == 0) {
         console.log("Sunday");
     } else if (number == 1) {
@@ -20,5 +17,5 @@ const readline = require('readline').createInterface({
         console.log("Saturday");
     } else 
     console.log("Invalid Input");
-    readline.close();
-});
+    
+

@@ -1,9 +1,6 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
-  
-  readline.question('Enter a single-digit number: ', number => {
+const prompt=require("prompt-sync")();
+const number = prompt("Enter a single-digit number: ");  
+
     if (number == 0) {
         console.log("Zero");
     } else if (number == 1) {
@@ -27,6 +24,6 @@ const readline = require('readline').createInterface({
     }else
     console.log("Invalid Input");
     
-    readline.close();
-  });
+    
+
   

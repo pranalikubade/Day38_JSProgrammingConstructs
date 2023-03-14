@@ -1,13 +1,8 @@
 
-const readline = require('readline');
+const prompt=require("prompt-sync")();
+const num = prompt("Enter a number: "); 
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-rl.question("Enter a number: ", function(number) {
-
-  number = parseInt(number);
+  number = parseInt(num);
 
   switch(number) {
     case 1:
@@ -35,5 +30,4 @@ rl.question("Enter a number: ", function(number) {
       console.log("Invalid input!");
   }
 
-  rl.close();
-});
+  

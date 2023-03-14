@@ -1,15 +1,8 @@
-// Importing the readline module
-const readline = require('readline');
 
-// Creating the readline interface
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const prompt=require("prompt-sync")();
+const num = prompt("Enter a number between 0 to 6: "); 
 
-rl.question("Enter a number between 0 and 6: ", function(number) {
-
-  number = parseInt(number);
+  number = parseInt(num);
 
   switch(number) {
     case 0:
@@ -37,5 +30,4 @@ rl.question("Enter a number between 0 and 6: ", function(number) {
       console.log("Invalid input!");
   }
 
-  rl.close();
-});
+  
